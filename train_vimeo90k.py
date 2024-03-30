@@ -168,11 +168,11 @@ if __name__ == '__main__':
     torch.backends.cudnn.benchmark = True
 
     if args.model_name == 'IFRNet':
-        from models.IFRNet import Model
+        from ifr_models.IFRNet import Model
     elif args.model_name == 'IFRNet_L':
-        from models.IFRNet_L import Model
+        from ifr_models.IFRNet_L import Model
     elif args.model_name == 'IFRNet_S':
-        from models.IFRNet_S import Model
+        from ifr_models.IFRNet_S import Model
 
     args.log_path = args.log_path + '/' + args.model_name
     args.num_workers = args.batch_size
